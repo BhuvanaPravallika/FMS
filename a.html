@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header{
+            text-align: center;
+            width:100%;
+            height: 50px;
+            padding-right: 20px;
+            color: white;
+            background-color: green;
+        }
+        a{
+            font-weight: bold;
+            color: red;
+            font-size: 40px;
+            height: 30px;
+            padding: 30px;
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+
+        .container1,.container2,.container3{
+            width: 200px;
+            height: 800px;
+            border: 1px solid white;
+            flex-wrap: wrap;
+            padding: 200px;
+
+            
+        }
+        main{
+            margin: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container1, .container2, .container3 {
+                width: 90%; /* Make images take more space on small screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <nav id="header">
+        <a href="home" >Home</a>
+        <a href="About">About</a>
+        <a href="Careers">Careers</a>
+    </nav>
+</header>
+    
+    <main>
+        <div class="container">
+        <div class="container1">
+        <img src="https://th.bing.com/th/id/OIP.4GWMqIzr2XModX0fb9QoVAHaFj?rs=1&pid=ImgDetMain" alt="cat" />  
+        </div>
+        <div class="container2">
+            <img src="https://th.bing.com/th?id=OIP.kHyBM-FgJ51zO2QqPNqKcQHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.4&pid=3.1&rm=2" alt="cat2"/>
+        </div>
+        <div class="container3">
+            <img src="https://th.bing.com/th/id/OIP.2Nv3jGbsC3R0SHJMlxVfWwHaE8?w=264&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="cat3"/>
+        </div>
+    </div>
+    </main>
+
+</body>
+</html>
